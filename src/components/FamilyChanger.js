@@ -8,7 +8,9 @@ export default class FamilyChanger extends Component {
     };
   }
 
-  // componentWillReceiveProps
+  componenntWillReceiveProps(props){
+    this.setState({ allowEdit: props.allowEdit})
+  }
 
   render() {
     return (
